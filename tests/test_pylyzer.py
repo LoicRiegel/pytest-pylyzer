@@ -1,21 +1,22 @@
-from  _pytest.pytester import Pytester
+from _pytest.pytester import Pytester
+
 
 def test_help_message(pytester: Pytester):
     result = pytester.runpytest(
-        '--help',
+        "--help",
     )
     # fnmatch_lines does an assertion internally
-    result.stdout.fnmatch_lines([
-        "pylyzer:",
-        "*--pylyzer*Run pylyzer.",
-    ])
+    result.stdout.fnmatch_lines(
+        [
+            "pylyzer:",
+            "*--pylyzer*Run pylyzer.",
+        ]
+    )
 
 
 def test_markers(pytester: Pytester):
     result = pytester.runpytest(
-        '--markers',
+        "--markers",
     )
     # fnmatch_lines does an assertion internally
-    result.stdout.fnmatch_lines([
-        "@pytest.mark.pylyzer: run pylyzer"
-    ])
+    result.stdout.fnmatch_lines(["@pytest.mark.pylyzer: run pylyzer"])
