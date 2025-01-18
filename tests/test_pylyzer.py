@@ -1,6 +1,6 @@
+from  _pytest.pytester import Pytester
 
-
-def test_help_message(pytester):
+def test_help_message(pytester: Pytester):
     result = pytester.runpytest(
         '--help',
     )
@@ -11,7 +11,7 @@ def test_help_message(pytester):
     ])
 
 
-def test_markers(pytester):
+def test_markers(pytester: Pytester):
     result = pytester.runpytest(
         '--markers',
     )
