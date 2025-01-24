@@ -18,8 +18,9 @@ The plugin will run one `pylyzer` check test per file and fail if `pylyzer` dete
 
 ## Contributing
 
-Contributions are very welcome. Tests can be run with `tox`, 
-Use ``tox´` to make sure that the tests work against all supported python versions and that the code is linted and formatted.
+Contributions are very welcome. 
+
+Use ``tox`` to make sure that the tests pass against all supported python versions and that the code is linted and formatted.
 
 ## License
 

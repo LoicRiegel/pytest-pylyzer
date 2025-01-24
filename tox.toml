@@ -16,3 +16,9 @@ commands = [
     ["ruff", "check", { replace = "posargs", default = ["."], extend = true }],
     ["ruff", "format", { replace = "posargs", default = ["."], extend = true }],
 ]
+
+[gh.python]
+"3.13" = ["3.13", "lint"]
+"3.12" = ["3.12"]
+"3.11" = ["3.11"]
+"3.10" = ["3.10"]
