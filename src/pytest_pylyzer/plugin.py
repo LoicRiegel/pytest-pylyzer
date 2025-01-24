@@ -1,5 +1,6 @@
 from pytest import Parser, Config
 
+
 def pytest_addoption(parser: Parser):
     group = parser.getgroup("pylyzer")
     group.addoption(
@@ -11,6 +12,4 @@ def pytest_addoption(parser: Parser):
 
 def pytest_configure(config: Config):
     """Register the additional marker."""
-    config.addinivalue_line(
-        "markers", "pylyzer: run pylyzer"
-    )
+    config.addinivalue_line("markers", "pylyzer: run pylyzer")
