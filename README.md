@@ -15,3 +15,11 @@ Or include `pytest-pylyzer` in your project's dev-dependencies.
 pytest --pylyzer
 ```
 The plugin will run one `pylyzer` check test per file and fail if `pylyzer` detects any errors in that file.
+
+## Contributing
+
+Contributions are very welcome. Tests can be run with `tox`, 
+
+## License
+
+Distributed under the terms of the [MIT](./LICENSE) license. This is free and open source software.
