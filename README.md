@@ -1,5 +1,7 @@
 # pytest-pylyzer
 
+[![check](https://github.com/LoicRiegel/pytest-pylyzer/actions/workflows/check.yaml/badge.svg)](https://github.com/LoicRiegel/pytest-pylyzer/actions/workflows/check.yaml)
+
 A [pytest](https://docs.pytest.org/en/stable/) plugin to run [pylyzer](https://github.com/mtshiba/pylyzer), a static code analyzer / language server for Python, written in Rust.
 
 ## Installation
