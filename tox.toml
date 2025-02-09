@@ -11,8 +11,9 @@ commands = [
 [env.lint]
 description = "run linter and formatter"
 skip_install = true
-deps = ["ruff"]
+deps = [ "pre-commit", "ruff"]
 commands = [
+    ["pre-commit", "run", "--all-files"],
     ["ruff", "check", { replace = "posargs", default = ["."], extend = true }],
     ["ruff", "format", { replace = "posargs", default = ["."], extend = true }],
 ]
