@@ -136,25 +136,22 @@ wheels = [
 
 [[package]]
 name = "pytest-pylyzer"
-version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "pylyzer" },
 ]
 
-[package.dev-dependencies]
+[package.optional-dependencies]
 dev = [
     { name = "pytest" },
     { name = "tox" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pylyzer" }]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "pytest" },
-    { name = "tox" },
+requires-dist = [
+    { name = "pylyzer" },
+    { name = "pytest", marker = "extra == 'dev'" },
+    { name = "tox", marker = "extra == 'dev'" },
 ]
 
 [[package]]
