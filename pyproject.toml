@@ -1,6 +1,5 @@
 [project]
 name = "pytest-pylyzer"
-version = "0.1.0"
 description = "A pytest plugin for pylyzer"
 keywords = ["pytest", "pylyzer"]
 classifiers = [
@@ -26,16 +25,25 @@ license = "MIT"
 license-files = ["<pLICENSE"]
 requires-python = ">=3.10"
 dependencies = ["pylyzer"]
+dynamic = ["version"]
 
 [project.urls]
 Repository = "https://github.com/LoicRiegel/pytest-pylyzer"
 
-[dependency-groups]
+[project.optional-dependencies]
 dev = ["pytest", "tox"]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
 
 [project.entry-points.pytest11]
 pylyzer = "pytest_pylyzer.plugin"
+
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "semver"
+pattern = "default-unprefixed"
