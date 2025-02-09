@@ -30,8 +30,9 @@ dynamic = ["version"]
 [project.urls]
 Repository = "https://github.com/LoicRiegel/pytest-pylyzer"
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = ["pytest", "tox"]
+lint = ["pre-commit", "ruff"]
 
 [project.entry-points.pytest11]
 pylyzer = "pytest_pylyzer.plugin"
