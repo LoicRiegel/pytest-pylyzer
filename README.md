@@ -1,6 +1,8 @@
 # pytest-pylyzer
 
-[![check](https://github.com/LoicRiegel/pytest-pylyzer/actions/workflows/check.yaml/badge.svg)](https://github.com/LoicRiegel/pytest-pylyzer/actions/workflows/check.yaml)
+[![check](https://github.com/LoicRiegel/pytest-pylyzer/actions/workflows/check.yml/badge.svg)](https://github.com/LoicRiegel/pytest-pylyzer/actions/workflows/check.yml)
+[![pypi latest version](https://img.shields.io/pypi/v/pytest-pylyzer.svg)](https://pypi.python.org/pypi/pytest-pylyzer)
+[![pypi versions](https://img.shields.io/pypi/pyversions/pytest-pylyzer.svg)](https://pypi.python.org/pypi/pytest-pylyzer)
 
 A [pytest](https://docs.pytest.org/en/stable/) plugin to run [pylyzer](https://github.com/mtshiba/pylyzer), a static code analyzer / language server for Python, written in Rust.
 
