@@ -18,8 +18,8 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
     "License :: OSI Approved :: MIT License",
 ]
-authors = [{ name = "Loic Riegel", email = "loic.riegel@outlook.fr" }]
-maintainers = [{ name = "Loic Riegel", email = "loic.riegel@outlook.fr" }]
+authors = [{ name = "Loïc Riegel", email = "loic.riegel@outlook.fr" }]
+maintainers = [{ name = "Loïc Riegel", email = "loic.riegel@outlook.fr" }]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
