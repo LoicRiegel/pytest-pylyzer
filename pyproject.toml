@@ -22,7 +22,7 @@ authors = [{ name = "Loic Riegel", email = "loic.riegel@outlook.fr" }]
 maintainers = [{ name = "Loic Riegel", email = "loic.riegel@outlook.fr" }]
 readme = "README.md"
 license = "MIT"
-license-files = ["<pLICENSE"]
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = ["pylyzer"]
 dynamic = ["version"]
