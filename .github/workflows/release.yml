@@ -4,11 +4,6 @@ on:
   push:
     tags:
       - '*'
-  workflow_run:
-    workflows:
-      - check
-    types:
-      - completed
 
 jobs:
   build-and-publish:
