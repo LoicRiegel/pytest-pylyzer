@@ -11,6 +11,7 @@ A [pytest](https://docs.pytest.org/en/stable/) plugin to run [pylyzer](https://g
 ```
 pip install pytest-pylyzer
 ```
+
 Or include `pytest-pylyzer` in your project's dev-dependencies.
 
 ## Usage
@@ -18,7 +19,8 @@ Or include `pytest-pylyzer` in your project's dev-dependencies.
 ```
 pytest --pylyzer
 ```
-The plugin will run one `pylyzer` check test per file and fail if `pylyzer` detects any errors in that file.
+
+The plugin will run `pylyzer` against all python files and fail if any error is detected.
 
 ## Contributing
 
